@@ -1,17 +1,16 @@
 import './App.css'
-import Condicional from './components/Condicional';
-
-
+import NovaLista from './components/NovaLista'
 
 function App() {
 
-const url = 'https://via.placeholder.com/150'
+  const meusItens = ["React","Vue","Angular"]
 
-const name = 'Maria'
   return (
     <div className="App">
-      <h1>Renderização Condicional</h1>
-      <Condicional/>
+      <h1>Renderização de Listas</h1>
+   
+    <NovaLista itens={meusItens}/>
+    <NovaLista itens={[]}/>
     </div>
   )
 }
